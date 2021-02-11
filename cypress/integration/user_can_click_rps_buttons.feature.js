@@ -1,3 +1,10 @@
-describe('User can click on button', () => {
-  it('user can click the button')
+describe('User can press button', () => {
+  beforeEach(() => {
+    cy.visit('http://localhost:3000');
+  });
+
+  it('press button', () => {
+    cy.get('#button').click();
+
+  })
 })
