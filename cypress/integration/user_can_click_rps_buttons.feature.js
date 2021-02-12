@@ -4,7 +4,7 @@ describe('User can press button', () => {
   });
 
   it('press button', () => {
-    cy.get('#button').click();
+    cy.get('#paper').click();
 
   })
 })

@@ -11,6 +11,7 @@ const setComputerInput = () => {
   } else {
     computerInput = 'scissors'
   };
+  console.log(computerInput)
   return computerInput
 };
 
@@ -38,9 +39,12 @@ function App() {
     <div>
       <header className="Rock-paper-scissors">
       <body>
-        <button>Paper-Button</button>
-        <button>Rock-Button</button>
-        <button>Scissors-Button</button>
+        <button onClick={setComputerInput} className="ChoiceButton" id="paper">
+        paper</button>
+        <button className="ChoiceButton">
+        rock</button>
+        <button className="ChoiceButton">
+        scissor</button>
       </body>
       </header>
     </div>
