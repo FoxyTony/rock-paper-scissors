@@ -1,3 +1,5 @@
+import React from 'react'
+import './App.css'
 
 let playerInput = 'paper'
 
@@ -41,9 +43,9 @@ function App() {
       <body>
         <button onClick={setComputerInput} className="ChoiceButton" id="paper">
         paper</button>
-        <button className="ChoiceButton">
+        <button onClick={setComputerInput} className="ChoiceButton" id="rock">
         rock</button>
-        <button className="ChoiceButton">
+        <button onClick={setComputerInput} className="ChoiceButton" id="scissor">
         scissor</button>
       </body>
       </header>
