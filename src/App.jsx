@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'semantic-ui-react'
 
 
 class App extends React.Component {
@@ -25,7 +26,7 @@ class App extends React.Component {
   startGame = (playerInput, computerInput) => {
     this.setState({ playerChoice: playerInput, computerChoice: computerInput })
     if (playerInput === computerInput) {
-      this.setState({ winner: 'its a tie!!' })
+      this.setState({ winner: 'it is a tie!' })
     } else if (playerInput === 'paper' && computerInput === 'scissors') {
       this.setState({ winner: 'computer wins!' })
     } else if (playerInput === 'rock' && computerInput === 'paper') {
@@ -47,16 +48,16 @@ class App extends React.Component {
       <div>
         <header className="Rock-paper-scissor">
 
-          <div>
+          <body>
 
-            <button onClick={() => this.startGame('paper', this.setComputerInput())} className="choiceButton" id="paper">
+            <button onClick={() => this.startGame('paper', this.setComputerInput())} class="ui primary basic button" id="paper">
               paper</button>
-            <button onClick={() => this.startGame('rock', this.setComputerInput())} className="choiceButton" id="rock">
+            <button onClick={() => this.startGame('rock', this.setComputerInput())} class="ui positive basic button" id="rock">
               rock</button>
-            <button onClick={() => this.startGame('scissors', this.setComputerInput())} className="choiceButton" id="scissors">
+            <button onClick={() => this.startGame('scissors', this.setComputerInput())} class="ui negative basic button" id="scissors">
               scissors</button>
-          </div>
-          <div>{this.state.winner}</div>
+          </body>
+          <div>{this.state.winner} </div>
         </header>
 
       </div>
