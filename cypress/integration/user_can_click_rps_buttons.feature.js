@@ -5,6 +5,8 @@ describe('User can press button', () => {
 
   it('press button', () => {
     cy.get('#paper').click();
+    cy.get('#rock').click();
+    cy.get('#scissor').click();
 
   })
 })
