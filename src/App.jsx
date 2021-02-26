@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react'
+
 
 
 class App extends React.Component {
@@ -50,14 +50,14 @@ class App extends React.Component {
 
           <body>
 
-            <button onClick={() => this.startGame('paper', this.setComputerInput())} class="ui primary basic button" id="paper">
+            <button onClick={() => this.startGame('paper', this.setComputerInput())} className="ui primary basic button" id="paper">
               paper</button>
-            <button onClick={() => this.startGame('rock', this.setComputerInput())} class="ui positive basic button" id="rock">
+            <button onClick={() => this.startGame('rock', this.setComputerInput())} className="ui positive basic button" id="rock">
               rock</button>
-            <button onClick={() => this.startGame('scissors', this.setComputerInput())} class="ui negative basic button" id="scissors">
+            <button onClick={() => this.startGame('scissors', this.setComputerInput())} className="ui negative basic button" id="scissors">
               scissors</button>
           </body>
-          <div>{this.state.winner} </div>
+          {this.state.winner && <h2 id="winner-state">{this.state.winner}</h2> }
         </header>
 
       </div>
