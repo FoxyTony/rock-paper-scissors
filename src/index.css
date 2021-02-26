@@ -12,3 +12,17 @@ code {
     monospace;
 }
 
+header {
+  min-height: 100%!important;
+  background-color:paleturquoise;
+  text-align: center;
+  align-self: center;
+
+
+}
+
+#root {
+  min-height: 100%!important;
+  background-color:lavender;
+}
+

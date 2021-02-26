@@ -45,22 +45,23 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <header className="Rock-paper-scissor">
 
-          <body>
+      <header className="Rock-paper-scissor">
+        <h1>Rock Paper Scissors!</h1>
 
-            <button onClick={() => this.startGame('paper', this.setComputerInput())} className="ui primary basic button" id="paper">
-              paper</button>
-            <button onClick={() => this.startGame('rock', this.setComputerInput())} className="ui positive basic button" id="rock">
-              rock</button>
-            <button onClick={() => this.startGame('scissors', this.setComputerInput())} className="ui negative basic button" id="scissors">
-              scissors</button>
-          </body>
-          {this.state.winner && <h2 id="winner-state">{this.state.winner}</h2> }
-        </header>
 
-      </div>
+        <button onClick={() => this.startGame('paper', this.setComputerInput())} className="ui primary basic button" id="paper">
+          paper</button>
+        <button onClick={() => this.startGame('rock', this.setComputerInput())} className="ui positive basic button" id="rock">
+          rock</button>
+        <button onClick={() => this.startGame('scissors', this.setComputerInput())} className="ui negative basic button" id="scissors">
+          scissors</button>
+          <h2>Press a button to play!</h2>
+
+        {this.state.winner && <h2 id="winner-state">{this.state.winner}</h2>}
+      </header>
+
+
     )
   };
 
